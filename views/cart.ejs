@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EliteWear</title>
+        <link rel="stylesheet" type="text/css" href="../products.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="logo.jpg" style="border-radius: 50%;width:4rem;height: 4rem;margin-top: 6%;margin-right: 5%;" alt="logo">
+            <a href="/" class="sections">Home page</a>
+            <a href="/mission" class="sections">Our mission</a>
+            <a href="/products" class="sections current_section">Products</a>
+            <a href="/cart" class="sections" style="margin-top: 4%;"><img src="cart.jpg" style="max-width:8rem;max-height:8rem;"></a>
+        </div>
+        <h1 style="margin-left: 10%;">Cart</h1>
+        <div class="checkout">
+            <div class="checkout_products">
+                <% cart.forEach(product => { %>
+                    <div class="product">
+                        <h2><%= product[0].name %></h2>
+                        <img src="<%= product[0].image %>" alt="<%= product[0].name %>" width="200" />
+                        <div style="display: flex;margin-bottom: 0.2%;">
+                            <p name="price" value="<%= product.price %>"><%= product[0].price %>.00$</p>
+                            <button id="minus-<%= product[0].id %>" style="margin-left: 20%;border-radius: 20%;height: 50%;margin-top: 6%;">-</button>
+                            <input style="width:10%;align-items: center;border-radius:20%;height:40%;margin-top: 6%;margin-left:3%;margin-right: 3%;" name="quantity" id="quantity-<%= product[0].id %>" value="1">
+                            <button style="border-radius: 20%;height: 50%;margin-top: 6%;" id="plus-<%= product[0].id %>">+</button>
+                        </div>
+                        <div class="size" style="margin-bottom: 3%;margin-top: 0%;">
+                            <input type="hidden" style="margin-top: 0%;" name="size" value="<%= product[1]%>">Size: <%= product[1]%>
+                        </div>
+                        <form method="POST" action="/cart/<%= product[0].id %>">
+                            <input type="hidden" name="id" value="<%= product[0].id %>">
+                            <input type="submit" class="remove" value="Remove from cart">
+                        </form>
+                    </div>
+                <% }) %>
+            </div>
+            <h2 id='total' value="" style="margin-right: 7%;flex-wrap: nowrap;">Total:0.00$</h2>
+            <button class="add" style="margin-left: 0%;margin-top: 0%;margin-right: 3%;height:5rem ;" id="checkout">Checkout</button>
+        </div>
+        <script src="../cart.js"></script>
+    </body>
+</html>

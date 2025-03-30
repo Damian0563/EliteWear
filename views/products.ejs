@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EliteWear</title>
+        <link rel="stylesheet" type="text/css" href="../products.css">
+        <link src="../index.js">
+    </head>
+    <body>
+        <div class="header">
+            <img src="logo.jpg" style="border-radius: 50%;width:4rem;height: 4rem;margin-top: 6%;margin-right: 5%;" alt="logo">
+            <a href="/" class="sections">Home page</a>
+            <a href="/mission" class="sections">Our mission</a>
+            <a href="/products" class="sections current_section">Products</a>
+            <a href="/cart" class="sections" style="margin-top: 4%;"><img src="cart.jpg" style="max-width:8rem;max-height:8rem;"></a>
+        </div>
+        <div class="products">
+            <% products.forEach(product => { %>
+                <div class="product">
+                    <a href="/products/<%= product.id %>">
+                        <h2><%= product.name %></h2>
+                        <img src="<%= product.image %>" alt="<%= product.name %>" width="200" />
+                        <p style="text-decoration: none;"><%= product.price %>.00$</p>
+                    </a>
+                </div>
+            <% }) %> 
+        </div>
+    </body>
+</html>

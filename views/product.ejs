@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EliteWear</title>
+        <link rel="stylesheet" type="text/css" href="../products.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="/logo.jpg" style="border-radius: 50%;width:4rem;height: 4rem;margin-top: 6%;margin-right: 5%;" alt="logo">
+            <a href="/" class="sections">Home page</a>
+            <a href="/mission" class="sections">Our mission</a>
+            <a href="/products" class="sections current_section">Products</a>
+            <a href="/cart" class="sections" style="margin-top: 4%;"><img src="/cart.jpg" style="max-width:8rem;max-height:8rem;"></a>
+        </div>
+        <div class="product_added" id="mess" style="display: none;">
+            <button class="collapse" id="collapse">X</button>
+            <p class="added_text">Product added to cart</p>
+            <button class="gocart"><a href="/cart" style="background-color: black;color:white;text-decoration: none;">Go to cart</a></button>
+        </div>
+        <div class="desc">  
+            <h1><%= product.name %></h1>
+            <img src="<%= product.image %>" alt="<%= product.name %>" style="width:20rem;height: 20rem;" />
+            <p><%= product.description %></p>
+            <div style="display:flex;margin-left: 45%;">
+                <p><%= product.price %>.00$</p>
+                <label style="margin-left: 3%;margin-right: 1%;margin-top: 2%;">Size: </label>
+                <select id="size" style="height: 2rem;margin-top: 1.4%;">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </div>
+            <div style="margin-top:3% ;">
+                <input type="hidden" id="id" name="id" value="<%= product.id %>">
+                <input type="submit" id="add" class="add" value="Add to cart">
+            </div>
+        </div>
+        <h2 style="margin-left: 5%;">Similar products</h2><br>
+        <div class="products">
+            <% similar.forEach(product => { %>
+                <div class="product">
+                    <a href="/products/<%= product.id %>">
+                        <h2><%= product.name %></h2>
+                        <img src="<%= product.image %>" alt="<%= product.name %>" width="200" />
+                        <p style="text-decoration: none;"><%= product.price %>.00$</p>
+                    </a>
+                </div>
+            <% }) %>
+        </div>
+
+        <!-- <h3 style="margin-left: 5%;">Reviews</h3>
+        <div class="reviews">
+            To do later
+        </div> -->
+        <script src="../index.js"></script>
+    </body>
+</html>

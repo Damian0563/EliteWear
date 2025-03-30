@@ -1,0 +1,108 @@
+{
+  "sporting_clothing": [
+    {
+      "name": "Running Shoes",
+      "image": "https://www.themanual.com/wp-content/uploads/sites/9/2020/09/allbirds-mens-tree-dashers.jpg",
+      "description": "Lightweight and comfortable running shoes designed for long-distance running with breathable material and excellent grip.",
+      "price": 50,
+      "id": 1,
+      "similar": [12, 9, 10]
+    },
+    {
+      "name": "Athletic Shorts",
+      "image": "https://m.media-amazon.com/images/I/81CKdVJGhJL._AC_SX679_.jpg",
+      "description": "Moisture-wicking athletic shorts perfect for gym workouts, running, and other sports activities.",
+      "price": 30,
+      "id": 2,
+      "similar": [9, 3, 6]
+    },
+    {
+      "name": "Compression T-Shirt",
+      "image": "https://m.media-amazon.com/images/I/51gLonI8VsL._AC_UY1100_.jpg",
+      "description": "Tight-fitting compression t-shirt that enhances muscle support and increases blood flow during intense workouts.",
+      "price": 60,
+      "id": 3,
+      "similar": [9, 2, 10]
+    },
+    {
+      "name": "Hooded Sweatshirt",
+      "image": "https://aplug.pl/cdn/shop/files/supreme-satin-applique-hooded-sweatshirt-fw24-black-suprssahsfblack-2.jpg?v=1737314642&width=1445",
+      "description": "Comfortable and warm hooded sweatshirt perfect for outdoor training and post-workout relaxation.",
+      "price": 80,
+      "id": 4,
+      "similar": [7, 11, 3]
+    },
+    {
+      "name": "Soccer Jersey",
+      "image": "https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://media.easy-peasy.ai/40459c79-41bd-4a47-83bc-fe4ddd5c9c2a/9fbec3e4-5555-45fd-bff4-d52a3d7acbe5.webp",
+      "description": "Breathable and durable soccer jersey designed for comfort and mobility during matches.",
+      "price": 35,
+      "id": 5,
+      "similar": [6, 3, 2]
+    },
+    {
+      "name": "Basketball Shorts",
+      "image": "https://xtremeshop.s3.cdn-upgates.com/_cache/d/c/dc19e3c2eb2e2d8da3b977eba5392ec0-tb6708-p1-00007.jpg",
+      "description": "Loose-fitting basketball shorts with moisture-wicking fabric for maximum comfort on the court.",
+      "price": 30,
+      "id": 6,
+      "similar": [5, 2, 9]
+    },
+    {
+      "name": "Track Jacket",
+      "image": "https://emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/dw59f2a750/AW22/SR%20Collection/SR%20Apparel%20-%20success/P2MC2S6014-FNT.png?sw=900&sh=900",
+      "description": "Stylish track jacket with a lightweight design and breathable material, ideal for outdoor training.",
+      "price": 120,
+      "id": 7,
+      "similar": [4, 11, 13]
+    },
+    {
+      "name": "Baseball Cap",
+      "image": "https://i.etsystatic.com/21657310/r/il/7a3da6/4302335850/il_fullxfull.4302335850_rpiq.jpg",
+      "description": "Classic baseball cap providing sun protection and a comfortable fit for all sports activities.",
+      "price": 20,
+      "id": 8,
+      "similar": [13, 11, 4]
+    },
+    {
+      "name": "Training Tank Top",
+      "image": "https://www.gymreapers.com/cdn/shop/files/performance-tank-black-main-min.jpg?v=1725998406&width=2048",
+      "description": "Breathable training tank top perfect for weightlifting, cardio, and high-intensity training.",
+      "price": 25,
+      "id": 9,
+      "similar": [3, 2, 1]
+    },
+    {
+      "name": "Thermal Compression Pants",
+      "image": "https://cdn11.bigcommerce.com/s-cmcj94sbu5/images/stencil/800x800/products/2773/9600/aero-tech-men-s-spandex-compression-pants-180__74840.1683043350.jpg?c=2",
+      "description": "Thermal compression pants that provide muscle support and warmth during cold-weather training.",
+      "price": 40,
+      "id": 10,
+      "similar": [1, 3, 12]
+    },
+    {
+      "name": "Windbreaker Jacket",
+      "image": "data:image/jpeg;base64,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",
+      "description": "Lightweight windbreaker jacket offering protection from wind and rain during outdoor sports.",
+      "price": 110,
+      "id": 11,
+      "similar": [7, 4, 8]
+    },
+    {
+      "name": "Cross-Training Shoes",
+      "image": "https://fitatmidlife.com/wp-content/uploads/Cloud-X-Trainnig-Shoe-from-On-Running-8-1024x683.jpg",
+      "description": "Versatile cross-training shoes designed for multi-sport use, providing stability and comfort.",
+      "price": 90,
+      "id": 12,
+      "similar": [1, 10, 9]
+    },
+    {
+      "name": "Gym Duffel Bag",
+      "image": "https://www.gymreapers.com/cdn/shop/files/duffle-bag-onyx-main.jpg?v=1720632772&width=2048",
+      "description": "Spacious gym duffel bag with compartments for shoes, clothes, and other workout essentials.",
+      "price": 50,
+      "id": 13,
+      "similar": [8, 7, 11]
+    }
+  ]
+}
